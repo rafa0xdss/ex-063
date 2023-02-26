@@ -1,6 +1,17 @@
-num = soma = termos = 0
-while num != 999:
-    num = int(input('Digite um valor [999 para parar]'))
-    soma += num
-    termos += 1
-print('Você digitou {} números e a soma entre eles foi {}'.format(termos - 1, soma - 999))
+print('-'*10)
+print('Sequencia de Fibonacci')
+print('-'*10)
+termo = int(input('Quantos termos voce quer mostrar?'))
+print('~'*10)
+t1 = 0
+t2 = 1
+print('{} - {} - '.format(t1, t2), end='')
+termo -= 2
+while not termo == 0:
+    termo -= 1
+    t3 = t1 + t2
+    print('{} - '.format(t3), end='')
+    t1 = t2
+    t2 = t3
+print('FIM')
+print('~'*10)
