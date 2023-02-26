@@ -1,1 +1,6 @@
-Teste - 1
+num = soma = termos = 0
+while num != 999:
+    num = int(input('Digite um valor [999 para parar]'))
+    soma += num
+    termos += 1
+print('Você digitou {} números e a soma entre eles foi {}'.format(termos - 1, soma - 999))
